@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
         <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <!-- päis -->
@@ -56,6 +58,8 @@
                             <a class="dropdown-item" href="#">Koorijad ja maskid</a> 
                         </div> 
                     </li> 
+                    <li class="nav-item"><a class="nav-link" href="meist.html">Meist</a></li>
+
                 </ul>
                 <!-- search -->
                 <form class="form-inline m-2 my-lg-0">
@@ -98,7 +102,20 @@
                             </div>            
                         </div>
                         <div class="p-2">
-                            <p>Tarne: <span class="text-primary">tasuta</span></p>
+                            <p>Tarne: </p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  DPD pakiautomaat (tasuta tarne)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  SmartPOST (€2.59)
+                                </label>
+                            </div>
+                            <p>Tarnevõimalusi uuendatakse kassas</p>
                             <p>Kokku: <span class="text-primary">15.99&#8364;</span></p>
                         </div>
                         <div class="p-2 mx-auto">
@@ -115,11 +132,32 @@
         <footer class="bg-light">
             <div class="container-fluid">
                 <div class="row">
-                    <!-- TODO! -->
-                    <div class="col-lg-12 text-center"><p>Footer</p></div>
+                    <div class="col-lg-6 col-xs-12">
+                        <h4 class="mt-lg-0 mt-sm-4">Asukoht</h4>
+                        <p><i class="mr-3"></i>Delta maja</p>
+                        <p><i class="mr-3"></i>+372 55555555</p>
+                        <p><i class="mr-3"></i>info@ut.ee</p>
+                      </div>
+                      <div class="col-lg-6 col-xs-12 about-company">
+                        <h2>Leia meid veebist</h2>
+                        <div style="padding: 20px 0px 0px 0px;">
+                            <a href="#">
+                                <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>       
+        </footer> 
         <!-- jQuery, Popper.js, Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

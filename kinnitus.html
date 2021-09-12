@@ -6,20 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content=""> 
         <meta name="author" content="">
-        <title>Avaleht</title>
+        <title>Ostukorv</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
         <!-- minu CSS -->
         <link rel="stylesheet" href="custom.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"/>
+
 
     </head>
     <body>
-        <!-- päis --->
+        <!-- päis -->
         <header class="py-2">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12 my-3 text-center"><a href="index.html"><img src="logo2.png" width="50%"></a></div>              
+                    <div class="col-lg-12 my-3 text-center"><img src="logo2.png" width="50%"></div>              
                 </div>          
             </div>
         </header>
@@ -62,106 +64,98 @@
 
                 </ul>
                 <!-- search -->
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline m-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Otsi" aria-label="Search">
                     <button class="btn btn-outline-white my-2 my-sm-0" type="submit"><svg class="lnr lnr-magnifier"><use xlink:href="#lnr-magnifier"></use></svg></button>
                 </form>
             </div>
-            
-            <form action="cart.html">
-                <div>
-                    <!-- cart -->
-                    <button class="btn btn-dark my-2 my-sm-0">
-                        <a href="/cart.html"></a>
-    
-                        <svg class="lnr lnr-cart">
-                            <use xlink:href="#lnr-cart"></use>
-                        </svg>
-                    </button>
-                </div>           
-            </form>
-            
+            <!-- cart -->
+            <a href="cart.html"><button class="btn btn-dark my-2 my-sm-0" type="submit"><svg class="lnr lnr-cart"><use xlink:href="#lnr-cart"></use></svg></button></a>
         </nav> 
-        <!-- breadcrumb -->
         <section>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb bg-white my-2 ml-2">
-                    <!-- это иконка с домиком, но у меня не получилось её выровнять нормально
-                    <li class="breadcrumb-item active" aria-current="page"><button class="btn btn-link btn-lg my-2 my-sm-0" type="submit"><svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg></button></li>
-                    -->
-                    <li class="breadcrumb-item active" aria-current="page">Avaleht</li>
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb" >
+                <ol class="breadcrumb bg-white my-2">
+                    <li class="breadcrumb-item"><a href="index.html">Avaleht</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html">Ostukorv</a></li>
+                    <li class="breadcrumb-item active">Kassa</li>
+
                 </ol>
-            </nav>  
+            </nav>
         </section>
-        <!-- jumbotron --->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">Sinu kaunis nahk</h1>
-              <p class="lead">Leia omale sobiv toode meie poest</p>
+        <!-- kassa -->
+        <form class="col-lg-6 offset-lg-3">
+            <h2>Arveldus & transport</h2>
+
+            <div class="mb-3">
+                <label class="form-label">Eesnimi</label>
+                <input class="form-control">
             </div>
+            <div>
+                <label class="form-label">Perenimi</label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label class="form-label">Tänav ja majanumber</label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label class="form-label">Sihtnumber</label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label class="form-label">Linn/Alevik/Küla</label>
+                <input class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Telefon</label>
+                <input class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">E-posti address</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Olen lugenud ja nõustun veebilehe müügitingimustega</label>
+            </div>
+
+            <div>
+            <legend>
+                Palun vali oma pank
+            </legend>
+            <input type="radio" class="sr-only" id="seb" name="bank">
+            <label for="seb" class="bank">
+                <img src="https://static.maksekeskus.ee/img/channel/lnd/seb.png" title="seb" alt="seb">
+            </label>
+            <input type="radio"class="sr-only" id="swedbank"  name="bank">
+            <label for="swedbank" class="bank">
+                <img src="https://static.maksekeskus.ee/img/channel/lnd/swedbank.png" title="swedbank" alt="swedbank">
+            </label>
+
+            <input type="radio" class="sr-only" id="Lhv" name="bank">
+            <label for="Lhv" class="bank">
+                <img src="https://static.maksekeskus.ee/img/channel/lnd/lhv.png" title="Lhv">
+            </label>
+            <input type="radio"class="sr-only" id="Nordea"  name="bank">
+            <label for="Nordea" class="bank">
+                <img src="https://static.maksekeskus.ee/img/channel/lnd/luminor.png" title="Nordea">
+            </label>
+
+            <input type="radio" class="sr-only" id="Krediidipank" name="bank">
+            <label for="Krediidipank" class="bank">
+                <img src="https://static.maksekeskus.ee/img/channel/lnd/coop.png" title="Krediidipank">
+            </label>
+            <input type="radio"class="sr-only" id="Pocopay"  name="bank">
+            <label for="Pocopay" class="bank">
+                <img src="https://static.maksekeskus.ee/img/channel/lnd/pocopay.png" title="Pocopay">
+            </label>
         </div>
-        <!-- tooted --->
-        <section>
-            <div class="container">
-                <h2 class="h mb-3">TOP</h2>
-                <div class="row"> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 1</a></h5>
-                                <p class="text-muted card-text"> 15.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 2</a></h5>
-                                <p class="text-muted card-text"> 12.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 3</a></h5>
-                                <p class="text-muted card-text"> 9.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 4</a></h5>
-                                <p class="text-muted card-text"> 18.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 5</a></h5>
-                                <p class="text-muted card-text"> 1.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div>
-                    <div class="col-md-4 mb-4"> 
-                        <div class="card shadow-sm border-0 h-100 text-center"><a href="#"><img src="soap.png" alt="" class="card-img-top"></a> 
-                            <div class="card-body"> 
-                                <h5> <a href="#" class="text-dark">Toode 6</a></h5>
-                                <p class="text-muted card-text"> 5.99&#8364;</p> 
-                                <a role="button" href="#" class="btn btn-outline-dark">Vaata</a>
-                            </div> 
-                        </div> 
-                    </div> 
-                </div>
-            </div>
-        </section>   
+
+        <button type="submit" class="btn btn-primary">Esita tellimus</button>
+
+        </form>
+        <!-- jalus -->
         <footer class="bg-light">
             <div class="container-fluid">
                 <div class="row">
@@ -196,5 +190,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-  </body>
-</html>
+    </body>
+</html>         
